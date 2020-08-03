@@ -38,7 +38,7 @@ function Landing() {
         </span>
       </div>
     </div>
-  )
+  );
 }
 
 export default Landing;
