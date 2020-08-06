@@ -37,19 +37,19 @@ function StudyTabs() {
         activeTintColor: '#32264D'
       }}
     >
-      <Screen 
+      <Screen
         name="TeacherList"
         component={TeacherList}
-        options={{ 
+        options={{
           tabBarLabel: 'Proffys',
-          tabBarIcon: ({ color, size }) => { 
+          tabBarIcon: ({ color, size }) => {
             return (
               <Ionicons name='ios-easel' size={size} color={color} />
-            ); 
-          } 
-        }} 
+            );
+          }
+        }}
       />
-      <Screen 
+      <Screen
         name="Favorites"
         component={Favorites}
         options={{ 
