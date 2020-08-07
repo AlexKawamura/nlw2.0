@@ -10,6 +10,7 @@ import TeacherItem, { Teacher } from '../../components/TeacherItem';
 import api from '../../services/api';
 
 import styles from './styles';
+import { useFocusEffect } from '@react-navigation/native';
 
 function TeacherList() {
   const [isFiltersVisible, setIsFiltersVisible] = useState(false);
@@ -25,7 +26,7 @@ function TeacherList() {
   function loadFavorites() {
     AsyncStorage.getItem('favorites').then(response => {
       if (response) {
-        const favoritedTeachers = JSON.parse(response)
+        const favoritedTeachers = JSON.parse(response);
         const favoritedTeachersIds = favoritedTeachers.map((teacher: Teacher) => {
           return teacher.id;
         });
@@ -34,6 +35,10 @@ function TeacherList() {
       }
     });
   }
+
+  useFocusEffect(() => {
+    loadFavorites();
+  });
 
   function handlerToggleFiltersVisible() {
     setIsFiltersVisible(!isFiltersVisible);
