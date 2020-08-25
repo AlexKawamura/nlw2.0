@@ -7,6 +7,13 @@ Com interface interativa tanto para web e mobile.
 
 ## Execução (command line)
 
+### Para iniciar o banco
 * Entrar na pasta server > yarn start
 
+### Para iniciar projeto mobile
+
 * Entrar na pasta mobile > yarn start ou expo start
+
+### Para iniciar projeto web
+
+* Entrar na pasta web > yarn start
