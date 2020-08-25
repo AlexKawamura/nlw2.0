@@ -5,7 +5,7 @@ Ferramenta para conectar professores e alunos. Em que o aluno poderá pesquisar 
 
 Com interface interativa tanto para web e mobile.
 
-## Execução
+## Execução (command line)
 
 * Entrar na pasta server > yarn start
 
